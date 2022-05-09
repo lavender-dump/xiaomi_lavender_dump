@@ -1,0 +1,18 @@
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Bionic loader config file for recovery mode
+#
+
+dir.recovery = /system/bin
+dir.recovery = /vendor/bin
+
+[recovery]
+namespace.default.search.paths  = /system_root/system/${LIB}
+namespace.default.search.paths += /system/${LIB}
+namespace.default.search.paths += /vendor/${LIB}
+namespace.default.search.paths += /apex/com.android.runtime/${LIB}
+namespace.default.search.paths += /apex/${LIB}
+namespace.default.search.paths += /system_root/system/product/${LIB}
+namespace.default.search.paths += /system_root/system/apex/com.android.runtime.release/${LIB}
+namespace.default.search.paths += /system_root/system/apex/com.android.runtime.debug/${LIB}
+namespace.default.search.paths += /product/${LIB}
